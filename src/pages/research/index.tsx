@@ -4,6 +4,7 @@ import SearchBar from '@/components/research/SearchBar';
 import PaperCard from '@/components/research/PaperCard';
 import CategorySelector, { ARXIV_CATEGORIES } from '@/components/research/CategorySelector';
 
+
 const RESULTS_PER_PAGE = 10;
 
 export default function Research() {
@@ -53,7 +54,7 @@ export default function Research() {
   const totalPages = Math.ceil(totalResults / RESULTS_PER_PAGE);
 
   return (
-    <div className="max-w-7xl mx-auto px-4">
+    <div className="max-w-7xl mx-auto px-4 py-8">
       <div className="mb-8">
         <h1 className="text-3xl font-bold mb-4">Research Papers</h1>
         <SearchBar
@@ -134,3 +135,4 @@ export default function Research() {
     </div>
   );
 }
+
